@@ -8,7 +8,7 @@ class ChatServer(dispatcher):
 
 s = ChatServer()
 s.create_socket(socket.AF_INET, socket.SOCK_STREAM)
-s.bind('', 5005)
+s.bind(('', 5005))
 s.listen(5)
 asyncore.loop()
 		
